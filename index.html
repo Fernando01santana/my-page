@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desculpas, Meu Amor</title>
+    <style>
+        /* Fundo romântico com gradiente suave */
+        body {
+            font-family: 'Dancing Script', cursive, 'Georgia', serif;
+            background: linear-gradient(to bottom, #f9e6f1, #f1d3f2);  /* Gradiente suave de rosa claro para um lilás suave */
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Container centralizado e com bordas arredondadas */
+        .container {
+            padding: 60px 40px;
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);  /* Fundo branco translúcido */
+            border-radius: 35px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Efeito suave de fade-in */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Título com fonte delicada e sombra suave */
+        h1 {
+            font-size: 48px;
+            color: #e63946;  /* Vermelho suave para amor */
+            margin-bottom: 20px;
+            font-family: 'Dancing Script', cursive;
+            letter-spacing: 3px;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);  /* Sombras suaves para dar um efeito etéreo */
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        /* Animação de brilho suave no título */
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #ff4d94, 0 0 20px #ff4d94; }
+            100% { text-shadow: 0 0 30px #ff4d94, 0 0 60px #ff4d94; }
+        }
+
+        /* Foto do casal com borda delicada e animação suave */
+        .photo {
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 30px;
+            border: 6px solid #f9c2d1;  /* Borda suave e romântica */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s infinite alternate;
+        }
+
+        /* Animação de "pulsar" na foto */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Mensagem de desculpas com fonte romântica e suave */
+        .message {
+            font-size: 26px;
+            line-height: 1.8;
+            color: #4a4a4a;
+            margin-top: 25px;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+            color: #555;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05);  /* Sombra leve para profundidade */
+            animation: fadeInMessage 2s ease-out;
+        }
+
+        /* Efeito de fade-in na mensagem */
+        @keyframes fadeInMessage {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Botão romântico com animação ao passar o mouse */
+        .btn {
+            margin-top: 40px;
+            padding: 14px 28px;
+            font-size: 22px;
+            color: white;
+            background-color: #f9c2d1;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Efeito de hover no botão (crescendo e mudando cor) */
+        .btn:hover {
+            background-color: #f7a9c4;
+            transform: scale(1.1);  /* Efeito de aumento ao passar o mouse */
+        }
+
+        /* Áudio de fundo */
+        audio {
+            display: none;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            .photo {
+                width: 250px;
+                height: 250px;
+            }
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .message {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Áudio romântico de fundo -->
+    <audio autoplay loop>
+        <source src="sua-musica-romantica.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <div class="container">
+        <h1>Me Desculpe, Meu Amor.</h1>
+        <!-- Foto do casal -->
+        <img src="ft.jpeg" alt="Foto nossa" class="photo">
+
+        <p class="message">
+            Eu sei que te magoei, e quero, do fundo do meu coração, que me perdoe.  
+            O que mais desejo é te ver feliz e fazer de tudo para reconquistar sua confiança.  
+            Você é tudo o que mais amo nesta vida e estou disposto a corrigir meus erros e te fazer sorrir, a cada novo amanhecer.<br><br>
+            Te amo infinitamente. <3
+        </p>
+
+        <!-- Botão para ação -->
+        <button class="btn" >>Estou Aqui, Vamos Conversar</button>
+    </div>
+</body>
+</html>
